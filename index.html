@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackboard-like Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div id="login-container">
+        <div id="login-page" class="login-page">
+            <img src="images/log-in-logo.png" alt="Logo" class="login-logo">
+            <button id="canelink-login" class="canelink-login">LOGIN WITH CANE ID</button>
+            <div class="info-box">
+                <p class="info-title">LEARNING PLATFORMS HELP DESK</p>
+                <p class="info-text">Monday-Friday: 9AM-9:30PM</p>
+                <p class="info-text">Saturday-Sunday: 10AM-2PM</p>
+                <p class="info-text">(305) 284-3949</p>
+                <p class="info-title"><a class="info-link" href="mailto:learningplatforms@miami.edu">learningplatforms@miami.edu</a></p>
+                <p class="info-title"><a class="info-link" href="#">Contact Us</a></p>
+            </div>
+            <div class="low-text-box">
+                <span class="orange-bold-text">Notice:</span> 
+                <span class="info-text">If you cannot login, try clearing the cache
+                    & cookies of your browser:</span>
+                <p class="info-text-center">
+                        <a href="https://support.mozilla.org/en-US/kb/how-clear-firefox-cache" target="_blank">Firefox Browser</a> | 
+                        <a href="https://support.google.com/accounts/answer/32050?co=GENIE.Platform%3DDesktop&hl=en" target="_blank">Chrome Browser</a>
+                </p>
+                <p class="info-text-center">
+                        <a href="https://support.apple.com/guide/safari/clear-your-browsing-history-sfri47acf5d6/mac" target="_blank">Safari Browser</a> | 
+                        <a href="https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank">Edge Browser</a>
+                </p>
+            </div>
+            <p class="bottom-text-center">© 1997-2024 Blackboard Inc. All Rights Reserved.</p>
+        </div>
+
+        <div id="canelink-login-page" class="canelink-login-page hidden">
+            <div class="image-container">
+                <img src="images/side-image.png" alt="Side Image" class="side-image">
+            </div>
+                
+            <div id="right-content-box">
+
+                <div class="login-form-container">
+                    <div class="logo-container">
+                        <img src="images/log-in-second-logo.png" alt="Logo" class="logo">
+                    </div>
+                    
+                    <div class="additional-info">
+                        <p class="normal-text">Sign in with your University of Miami credentials <br> (either primary email address or CaneID):</p>
+                        <br>
+                    </div>
+
+                    <!-- Error message container -->
+        <div id="error" class="fieldMargin error smallText" style="display: none;">
+            <span id="errorText" aria-live="assertive" role="alert"></span>
+        </div>
+
+
+                    <form id="secondary-login-form">
+                        <input type="text" placeholder="someone@example.com" id="email-input">
+                        <input type="text" placeholder="Password"class="masked-input" oninput="maskPassword(this)" id="password-input"> 
+                        <button type="submit" class="sign-in-button">Sign In</button>
+                    </form>
+                    <div class="additional-info">
+                        <p class="bold-text">Forgot your CaneID or password?</p>
+                        <p class="normal-text">Visit the CaneID Self-Service webpage to manage and/or recover your CaneID or password: <a href="#">caneidhelp.miami.edu</a></p>
+                        <p class="normal-text">For technical support, contact the UMIT Service Desk at (305) 284-6565 or <a href="#">help@miami.edu</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div id="main-content" class="hidden">
+        <nav>
+            <div class="nav-logo">
+                <img src="images/blackboard-logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li class="active" data-page="institution"><img src="images/institution-page-icon.png" alt="home img"> Institution Page</li>
+                <li data-page="account"><img src="images/account-icon.png" alt="account img"> Account</li>
+                <li data-page="activity"><img src="images/activity-icon.png" alt="activity img"> Activity</li>
+                <li data-page="courses"><img src="images/courses-icon.png" alt="courses img"> Courses</li>
+                <li data-page="organizations"><img src="images/organization-icon.png" alt="organization img"> Organizations</li>
+                <li data-page="calendar"><img src="images/calender-icon.png" alt="calender img"> Calendar</li>
+                <li data-page="messages"><img src="images/messages-icon.png" alt="messages img"> Messages</li>
+                <li data-page="grades"><img src="images/grades-icon.png" alt="grades img"> Grades</li>
+                <li data-page="tools"><img src="images/tools-icon.png" alt="tools img"> Tools</li>
+                <li data-page="signout"><img src="images/log-out-icon.png" alt="signout img"> Sign Out</li>
+            </ul>
+            <div class="footer">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </nav>
+        <main>
+            <header class="institution-header">
+                <div class="header-content">
+                    <div class="icon-container">
+                        <img src="images/University-of-Miami-Logo.png" alt="University Icon" class="university-icon">
+                    </div>
+                    <h1 class="university-title">University of Miami</h1>
+                </div>
+            </header>
+            <div class="page-content">
+                <!-- Rest of the page content will go here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
