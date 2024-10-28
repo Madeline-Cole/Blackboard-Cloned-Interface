@@ -72,6 +72,14 @@ body {
     margin-top: 50px;
 }
 
+.language-selector {
+    position: relative;
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    width: 50px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /*page 1 login button*/
 .canelink-login {
     background-color: white;
