@@ -271,9 +271,8 @@ a:hover {
 /*page 2 log in form input*/
 #secondary-login-form input {
     margin-bottom: 8px;
-    padding: 10px;
     border: 1px solid #ccc;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: light;
     height: 30px; /* Set a specific height for the input fields if necessary */
 }
@@ -291,6 +290,12 @@ a:hover {
     cursor: pointer;
     width: 90px;
     height: 30px;
+}
+
+.sign-in-button:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.913), rgba(255, 255, 255, 0.895)), #ff6708; 
+    background-blend-mode: overlay; /* Blend the gradient with the background color */
+    text-decoration: none; 
 }
 
 /*page 2 password input hider*/
